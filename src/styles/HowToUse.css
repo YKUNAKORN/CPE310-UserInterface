@@ -1,0 +1,389 @@
+.how-to-use-wrapper {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-top: -40px;
+}
+
+.how-to-content {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 150px 5%;
+}
+
+.how-to-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2D2D2D;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.how-to-subtitle {
+  font-size: 18px;
+  color: #868686;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.instruction-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.instruction-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instruction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(26, 182, 223, 0.2);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: #1AB6DF;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2D2D2D;
+  margin-bottom: 12px;
+}
+
+.step-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.feature-list {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.feature-list li {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.tip-box {
+  background: rgba(254, 223, 67, 0.08);
+  border-left: 4px solid #FEDF43;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #2D2D2D;
+}
+
+.controls-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.control-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 12px;
+}
+
+.control-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-icon {
+  background: #1AB6DF;
+}
+
+.pause-icon {
+  background: #C0C0C0;
+}
+
+.stop-icon {
+  background: #FF0000;
+}
+
+.control-item p {
+  margin: 5px 0 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.additional-info {
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 40px;
+}
+
+.info-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2D2D2D;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.info-section {
+  margin-bottom: 30px;
+}
+
+.info-section h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1AB6DF;
+  margin-bottom: 15px;
+}
+
+.troubleshooting {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trouble-item {
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 12px;
+}
+
+.trouble-item strong {
+  display: block;
+  color: #2D2D2D;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.trouble-item p {
+  color: #666;
+  font-size: 15px;
+  margin: 0;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 50px 30px;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.cta-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2D2D2D;
+  margin-bottom: 12px;
+}
+
+.cta-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0B547F;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(11, 84, 127, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(11, 84, 127, 0.3);
+}
+
+.cta-button svg {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .how-to-content {
+    padding: 30px 4%;
+  }
+
+  .how-to-title {
+    font-size: 28px;
+  }
+
+  .how-to-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .instruction-card {
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .step-title {
+    font-size: 20px;
+  }
+
+  .step-description {
+    font-size: 15px;
+  }
+
+  .controls-guide {
+    gap: 12px;
+  }
+
+  .control-item {
+    padding: 12px;
+  }
+
+  .control-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .additional-info {
+    padding: 25px;
+  }
+
+  .info-title {
+    font-size: 26px;
+  }
+
+  .info-section h3 {
+    font-size: 20px;
+  }
+
+  .cta-section {
+    padding: 35px 20px;
+  }
+
+  .cta-title {
+    font-size: 26px;
+  }
+
+  .cta-description {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-to-title {
+    font-size: 24px;
+  }
+
+  .how-to-subtitle {
+    font-size: 14px;
+  }
+
+  .instruction-card {
+    padding: 20px;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .step-title {
+    font-size: 18px;
+  }
+
+  .step-description {
+    font-size: 14px;
+  }
+
+  .feature-list li {
+    font-size: 14px;
+  }
+
+  .tip-box {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .additional-info {
+    padding: 20px;
+  }
+
+  .info-title {
+    font-size: 22px;
+  }
+
+  .info-section h3 {
+    font-size: 18px;
+  }
+
+  .cta-title {
+    font-size: 22px;
+  }
+
+  .cta-description {
+    font-size: 14px;
+  }
+}
+
