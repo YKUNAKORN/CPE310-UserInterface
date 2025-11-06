@@ -170,7 +170,7 @@ const Overview: React.FC = () => {
 
       {/* Use Cases Section */}
       <section className="use-cases-section">
-        <h2 className="section-title">How people use ASL Detection</h2>
+        <h2 className="section-title">How people use Silent Voices</h2>
         
         <div className="use-cases-grid">
           <div className="use-case-card">
@@ -216,7 +216,7 @@ const Overview: React.FC = () => {
             </div>
             <h3>Build your project</h3>
             <p>
-              Integrate ASL detection into your own applications. Our ML-ready architecture makes
+              Integrate Silent Voices into your own applications. Our ML-ready architecture makes
               it easy to add custom models, extend functionality, or build upon our foundation
               for research and development.
             </p>
@@ -248,7 +248,7 @@ const Overview: React.FC = () => {
             No sign-up required – just click and start.
           </p>
           <Link to="/detection" className="cta-button">
-            Try ASL Detection Now
+            Try Silent Voices Now
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>

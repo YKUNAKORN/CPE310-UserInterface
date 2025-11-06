@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <Link to="/" style={{ textDecoration: 'none' }}>
-          <h1 className="navbar-title">ASL Detection</h1>
+          <h1 className="navbar-title">Silent Voices</h1>
         </Link>
       </div>
       <div className="navbar-menu">

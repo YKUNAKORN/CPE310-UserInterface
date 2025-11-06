@@ -7,7 +7,7 @@ const HowToUse: React.FC = () => {
   return (
     <div className="how-to-use-wrapper">
       <div className="how-to-content">
-        <h1 className="how-to-title">Manual: ASL Alphabet Detection</h1>
+        <h1 className="how-to-title">Manual: Silent Voices</h1>
         <p className="how-to-subtitle">A complete guide to using our real-time sign language recognition system</p>
 
         <div className="instruction-cards">

@@ -306,7 +306,7 @@ const Home: React.FC = () => {
     <>
       <div className="content-wrapper">
         <div className="header-section">
-          <h1 className="main-title">ASL Alphabet Detection</h1>
+          <h1 className="main-title">Silent Voices</h1>
           <p className="subtitle">Real-time American Sign Language Recognition with Voice Output</p>
         </div>
 
