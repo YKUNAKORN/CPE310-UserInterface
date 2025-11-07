@@ -94,7 +94,7 @@ const Home: React.FC = () => {
         
         // Send result to TTS API
         try {
-          await fetch('http://127.0.0.1:8000/tts', {
+          const response = await fetch('http://127.0.0.1:8000/tts', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -103,6 +103,12 @@ const Home: React.FC = () => {
               text: newChar
             })
           });
+
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+
+          const ttsData = await response.json();
         } catch (ttsError) {
           console.error('TTS API Error:', ttsError);
         }
@@ -124,7 +130,7 @@ const Home: React.FC = () => {
           // Use ref to access the latest value of pendingText
           const textToSpeak = pendingTextRef.current;
           if (textToSpeak) {
-            const utterance = new SpeechSynthesisUtterance(textToSpeak);
+            const utterance = new SpeechSynthesisUtterance(newChar);
             utterance.lang = 'en-US';
             utterance.rate = 0.9;
             window.speechSynthesis.speak(utterance);
@@ -135,7 +141,7 @@ const Home: React.FC = () => {
             setDetectedText(prev => prev + ' ');
           }
           autoSpeakTimerRef.current = null;
-        }, 5000);
+        }, 1000);
       }
     } catch (error) {
       console.error('API Error:', error);
